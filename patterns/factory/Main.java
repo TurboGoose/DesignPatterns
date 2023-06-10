@@ -1,14 +1,19 @@
 package factory;
 
-import factory.stores.regionpizzastores.ChicagoPizzaStore;
-import factory.stores.regionpizzastores.NewYorkPizzaStore;
+import factory.store.ChicagoPizzaStore;
+import factory.store.NYPizzaStore;
 
 public class Main {
     public static void main(String[] args) {
-        ChicagoPizzaStore chicagoPizzaStore = new ChicagoPizzaStore();
-        chicagoPizzaStore.orderPizza("cheese");
+        new NYPizzaStore().orderPizza("cheese");
+        System.out.println("---");
 
-        NewYorkPizzaStore nyPizzaStore = new NewYorkPizzaStore();
-        nyPizzaStore.orderPizza("pepperoni");
+        new NYPizzaStore().orderPizza("clams");
+        System.out.println("---");
+
+        new ChicagoPizzaStore().orderPizza("cheese");
+        System.out.println("---");
+
+        new ChicagoPizzaStore().orderPizza("clams");
     }
 }
