@@ -7,6 +7,7 @@ public abstract class PizzaStore {
 
     public void orderPizza(String type) {
         Pizza pizza = createPizza(type);
+        System.out.println(pizza.getName());
         pizza.prepare();
         pizza.bake();
         pizza.cut();

@@ -2,14 +2,18 @@ package newfactory;
 
 import newfactory.store.ChicagoPizzaStore;
 import newfactory.store.NYPizzaStore;
-import newfactory.store.PizzaStore;
 
 public class Main {
     public static void main(String[] args) {
-        PizzaStore pizzaStore1 = new NYPizzaStore();
-        pizzaStore1.orderPizza("cheese");
+        new NYPizzaStore().orderPizza("cheese");
+        System.out.println("---");
 
-        PizzaStore pizzaStore2 = new ChicagoPizzaStore();
-        pizzaStore2.orderPizza("cheese");
+        new NYPizzaStore().orderPizza("clams");
+        System.out.println("---");
+
+        new ChicagoPizzaStore().orderPizza("cheese");
+        System.out.println("---");
+
+        new ChicagoPizzaStore().orderPizza("clams");
     }
 }

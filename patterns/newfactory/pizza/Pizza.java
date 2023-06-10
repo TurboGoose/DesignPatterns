@@ -1,21 +1,9 @@
 package newfactory.pizza;
 
-import java.util.LinkedList;
-import java.util.List;
-
 public abstract class Pizza {
-    String name;
-    String dough;
-    String sauce;
-    List<String> toppings = new LinkedList<>();
+    protected String name;
 
-    public void prepare() {
-        System.out.println("Preparing " + name);
-        System.out.println("Tossing " + dough);
-        System.out.println("Adding " + sauce);
-        System.out.println("Adding toppings:");
-        toppings.forEach(t -> System.out.println("- " + t));
-    }
+    public abstract void prepare();
 
     public void bake() {
         System.out.println("Bake for 25 minutes at 350 degrees");
