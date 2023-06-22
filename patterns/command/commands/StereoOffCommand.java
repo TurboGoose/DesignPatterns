@@ -1,11 +1,9 @@
-package command.undo.commands.stereo;
+package command.commands;
 
-import command.undo.commands.Command;
-import command.undo.receivers.Stereo;
+import command.receivers.Stereo;
 
 public class StereoOffCommand implements Command {
     private final Stereo stereo;
-    private int prevVolume;
 
     public StereoOffCommand(Stereo stereo) {
         this.stereo = stereo;
@@ -13,14 +11,13 @@ public class StereoOffCommand implements Command {
 
     @Override
     public void execute() {
-        prevVolume = stereo.getVolume();
         stereo.off();
     }
 
     @Override
     public void undo() {
         stereo.on();
-        stereo.setCD();
-        stereo.setVolume(prevVolume);
+        stereo.setCd();
+        stereo.setVolume(50);
     }
 }

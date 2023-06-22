@@ -1,7 +1,6 @@
-package command.undo.commands.light;
+package command.commands;
 
-import command.undo.commands.Command;
-import command.undo.receivers.Light;
+import command.receivers.Light;
 
 public class LightOffCommand implements Command {
     private final Light light;
