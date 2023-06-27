@@ -1,4 +1,4 @@
-package adapter.duck;
+package adapter.birds.duck;
 
 public interface Duck {
     void squeak();

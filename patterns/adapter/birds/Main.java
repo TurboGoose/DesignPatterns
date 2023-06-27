@@ -1,11 +1,11 @@
-package adapter;
+package adapter.birds;
 
-import adapter.duck.Duck;
-import adapter.duck.DuckAdapter;
-import adapter.duck.MallardDuck;
-import adapter.turkey.Turkey;
-import adapter.turkey.TurkeyAdapter;
-import adapter.turkey.WildTurkey;
+import adapter.birds.duck.Duck;
+import adapter.birds.duck.DuckAdapter;
+import adapter.birds.duck.MallardDuck;
+import adapter.birds.turkey.Turkey;
+import adapter.birds.turkey.TurkeyAdapter;
+import adapter.birds.turkey.WildTurkey;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package adapter.duck;
+package adapter.birds.duck;
 
-import adapter.turkey.Turkey;
+import adapter.birds.turkey.Turkey;
 
 import java.util.Random;
 

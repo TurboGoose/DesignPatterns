@@ -1,6 +1,6 @@
-package adapter.turkey;
+package adapter.birds.turkey;
 
-import adapter.duck.Duck;
+import adapter.birds.duck.Duck;
 
 public class TurkeyAdapter implements Duck {
     private Turkey turkey;
